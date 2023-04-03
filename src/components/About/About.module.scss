@@ -1,0 +1,59 @@
+@import "../../assets/styles/variables";
+
+.about {
+  margin-top: 80px;
+
+  .title {
+    display: inline;
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    column-gap: 40px;
+
+    @media (max-width: 1055px) {
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: 40px;
+      text-align: center;
+    }
+
+    .image {
+      max-width: 500px;
+
+      @media (max-width: 1055px) {
+        max-width: 100%;
+      }
+
+      img {
+        border-radius: 20px;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+
+    .info {
+      max-width: 500px;
+
+      @media (max-width: 1055px) {
+        max-width: 100%;
+      }
+
+      h3 {
+        font-size: 32px;
+        opacity: 0.8;
+        line-height: 1.4;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: $grey;
+      }
+    }
+  }
+}

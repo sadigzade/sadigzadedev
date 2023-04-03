@@ -1,0 +1,30 @@
+@import "../../assets/styles/variables";
+
+.footer {
+  margin-top: 80px;
+
+  &__container {
+    .topline {
+      width: 100%;
+      border-top: 1px solid $white;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  &__social {
+    svg:hover path {
+      fill: #ff8d3f;
+    }
+
+    svg path {
+      fill: $white;
+      transition: all 300ms ease-in-out;
+    }
+  }
+}
