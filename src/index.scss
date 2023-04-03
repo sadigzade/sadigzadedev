@@ -1,0 +1,243 @@
+@import "./assets/styles/variables";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #1c1d24;
+  color: #f0f2f5;
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+span {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #b16cea 14.06%, #ff5e69 44.79%, #ff8a56 71.87%, #ffa84b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* @layer components {
+  .transition {
+    transition: all 300ms ease-out !important;
+  }
+
+  .transform-50 {
+    transform: translate(-50%, -50%);
+  }
+
+  .hover-60:hover {
+    opacity: 60%;
+  }
+
+  .gradient-text {
+    background: linear-gradient(
+      90deg,
+      #b16cea 14.06%,
+      #ff5e69 44.79%,
+      #ff8a56 71.87%,
+      #ffa84b 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .button {
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border-radius: 40px;
+  }
+
+  .bg-gradient {
+    background: linear-gradient(
+      90deg,
+      #b16cea 14.06%,
+      #ff5e69 44.79%,
+      #ff8a56 71.87%,
+      #ffa84b 100%
+    );
+  }
+
+  .box-shadow {
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04),
+      0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  }
+
+  .bg-empty {
+    background: transparent;
+    border: 2px solid #f0f2f5;
+  }
+
+  .bg-full {
+    color: #1c1d24;
+    background: #f0f2f5;
+    border: 2px solid #f0f2f5;
+  }
+
+  .button-hover-empty:hover {
+    color: #1c1d24;
+    background-color: #f0f2f5;
+  }
+
+  .button-hover-full:hover {
+    color: #f0f2f5;
+    background-color: transparent;
+  }
+
+  .underline-gradient::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    border-radius: 5px;
+    background: linear-gradient(
+      90deg,
+      #b16cea 14.06%,
+      #ff5e69 44.79%,
+      #ff8a56 71.87%,
+      #ffa84b 100%
+    );
+  }
+
+  .parallax {
+    overflow: hidden;
+    letter-spacing: -2px;
+    line-height: 0.8;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .parallax .scroller {
+    background: #f0f2f5;
+    color: #161513;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 32px;
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .parallax span {
+    display: block;
+    margin-right: 30px;
+  }
+
+  .vk,
+  .tg,
+  .inst,
+  .github {
+    width: 22px;
+    height: 22px;
+  }
+
+  .social:hover svg path {
+    fill: #1c1d24;
+  }
+} */
+
+/* ================================== */
+
+/* #shapes-mask {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.25s ease 0.65s;
+  z-index: -3;
+}
+
+.no-js #shapes-mask {
+  display: none;
+}
+
+#shapes-mask svg path {
+  stroke: inherit;
+  fill: none;
+}
+
+#shapes-mask .layer {
+  position: absolute;
+  z-index: 1;
+}
+
+#shapes-mask .pink {
+  stroke: #f06449;
+  fill: none;
+}
+
+#shapes-mask .yellow {
+  stroke: #ff0;
+  fill: none;
+}
+
+#shapes-mask .aqua {
+  stroke: aqua;
+  fill: none;
+}
+
+.bright-theme #shapes-mask .pink {
+  stroke: #ec3c1a;
+  fill: none;
+}
+
+.bright-theme #shapes-mask .yellow {
+  stroke: #bdbd00;
+  fill: none;
+}
+
+.bright-theme #shapes-mask .aqua {
+  stroke: #099;
+  fill: none;
+} */
