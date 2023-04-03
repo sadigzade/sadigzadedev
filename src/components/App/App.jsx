@@ -1,6 +1,7 @@
 import { useRef } from "react";
 
 import home from "../../assets/images/home.jpg";
+import starIcon from "../../assets/images/star.svg";
 import jsLogo from "../../assets/images/js-logo.png";
 import tsLogo from "../../assets/images/ts-logo.png";
 import cssLogo from "../../assets/images/css-logo.png";
@@ -12,6 +13,7 @@ import webpackLogo from "../../assets/images/webpack-logo.png";
 import tailwindcssLogo from "../../assets/images/tailwindcss-logo.png";
 
 import styles from "./App.module.scss";
+import ParallaxText from "../ParallaxText/ParallaxText";
 
 const skills = [
   { id: 1, logo: htmlLogo, text: "HTML" },
@@ -65,7 +67,7 @@ const App = () => {
   return (
     <div>
       <header className={styles.header} id="header">
-        <div className={`${styles.header_container} container`}>
+        <div className={`${styles.header__container} container`}>
           <a href="/" className={styles.header__logo}>
             Sadigzade.dev
           </a>
@@ -158,6 +160,13 @@ const App = () => {
               <img src={home} alt="" />
             </div>
           </section>
+        </div>
+        <div className={styles.parallax}>
+          <ParallaxText baseVelocity={-5}>
+            <div className={styles.text}>
+              Develop <img src={starIcon} alt="" />
+            </div>
+          </ParallaxText>
         </div>
       </main>
     </div>
