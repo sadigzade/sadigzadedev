@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Contacts.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Contacts = () => {
   return (
@@ -13,7 +13,7 @@ const Contacts = () => {
         <div className={styles.contacts__body}>
           <div className={styles.contacts__item}>
             <div className={styles.contacts__item__icon}>
-              <FontAwesomeIcon icon={faLocationDot} />
+              {/* <FontAwesomeIcon icon={faLocationDot} /> */}
             </div>
             <div>
               <h3>Локация</h3>
@@ -22,7 +22,7 @@ const Contacts = () => {
           </div>
           <div className={styles.contacts__item}>
             <div className={styles.contacts__item__icon}>
-              <FontAwesomeIcon icon={faPhone} />
+              {/* <FontAwesomeIcon icon={faPhone} /> */}
             </div>
             <div>
               <h3>Телефон</h3>
@@ -31,7 +31,7 @@ const Contacts = () => {
           </div>
           <div className={styles.contacts__item}>
             <div className={styles.contacts__item__icon}>
-              <FontAwesomeIcon icon={faEnvelope} />
+              {/* <FontAwesomeIcon icon={faEnvelope} /> */}
             </div>
             <div>
               <h3>Email</h3>

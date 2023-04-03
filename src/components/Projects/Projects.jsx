@@ -1,11 +1,11 @@
 import React from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faGithub } from "@fortawesome/free-brands-svg-icons";
+// import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 
 import ProjectPreview1 from "../../assets/images/project-preview-1.jpg";
 
 import styles from "./Projects.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
   return (
@@ -26,11 +26,11 @@ const Projects = () => {
                 <div className={styles.links}>
                   <a href="/" className={styles.links__item}>
                     <span>Code</span>
-                    <FontAwesomeIcon icon={faGithub} />
+                    {/* <FontAwesomeIcon icon={faGithub} /> */}
                   </a>
                   <a href="/" className={styles.links__item}>
                     <span>Demo</span>
-                    <FontAwesomeIcon icon={faSquareArrowUpRight} />
+                    {/* <FontAwesomeIcon icon={faSquareArrowUpRight} /> */}
                   </a>
                 </div>
               </div>
@@ -45,11 +45,11 @@ const Projects = () => {
                 <div className={styles.links}>
                   <a href="/" className={styles.links__item}>
                     <span>Code</span>
-                    <FontAwesomeIcon icon={faGithub} />
+                    {/* <FontAwesomeIcon icon={faGithub} /> */}
                   </a>
                   <a href="/" className={styles.links__item}>
                     <span>Demo</span>
-                    <FontAwesomeIcon icon={faSquareArrowUpRight} />
+                    {/* <FontAwesomeIcon icon={faSquareArrowUpRight} /> */}
                   </a>
                 </div>
               </div>
@@ -64,11 +64,11 @@ const Projects = () => {
                 <div className={styles.links}>
                   <a href="/" className={styles.links__item}>
                     <span>Code</span>
-                    <FontAwesomeIcon icon={faGithub} />
+                    {/* <FontAwesomeIcon icon={faGithub} /> */}
                   </a>
                   <a href="/" className={styles.links__item}>
                     <span>Demo</span>
-                    <FontAwesomeIcon icon={faSquareArrowUpRight} />
+                    {/* <FontAwesomeIcon icon={faSquareArrowUpRight} /> */}
                   </a>
                 </div>
               </div>
@@ -83,11 +83,11 @@ const Projects = () => {
                 <div className={styles.links}>
                   <a href="/" className={styles.links__item}>
                     <span>Code</span>
-                    <FontAwesomeIcon icon={faGithub} />
+                    {/* <FontAwesomeIcon icon={faGithub} /> */}
                   </a>
                   <a href="/" className={styles.links__item}>
                     <span>Demo</span>
-                    <FontAwesomeIcon icon={faSquareArrowUpRight} />
+                    {/* <FontAwesomeIcon icon={faSquareArrowUpRight} /> */}
                   </a>
                 </div>
               </div>

@@ -1,10 +1,10 @@
 import React from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faGithubSquare, faTelegram, faVk } from "@fortawesome/free-brands-svg-icons";
 
 import home from "../../assets/images/home.jpg";
 
 import styles from "./Hero.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithubSquare, faTelegram, faVk } from "@fortawesome/free-brands-svg-icons";
 
 const Hero = () => {
   return (
@@ -23,21 +23,21 @@ const Hero = () => {
               target="_blank"
               className={styles.social__icons}
               rel="noreferrer">
-              <FontAwesomeIcon icon={faGithubSquare} />
+              {/* <FontAwesomeIcon icon={faGithubSquare} /> */}
             </a>
             <a
               href="https://t.me/sadigzade"
               target="_blank"
               className={styles.social__icons}
               rel="noreferrer">
-              <FontAwesomeIcon icon={faTelegram} />
+              {/* <FontAwesomeIcon icon={faTelegram} /> */}
             </a>
             <a
               href="https://vk.com/sadigzade"
               target="_blank"
               className={styles.social__icons}
               rel="noreferrer">
-              <FontAwesomeIcon icon={faVk} />
+              {/* <FontAwesomeIcon icon={faVk} /> */}
             </a>
           </div>
           <div className={styles.resume}>
