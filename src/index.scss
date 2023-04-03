@@ -11,8 +11,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  background-color: #1c1d24;
-  color: #f0f2f5;
+  background-color: $main;
+  color: $white;
   overflow-x: hidden;
   height: 100%;
   margin: 0;
@@ -55,6 +55,12 @@ p {
   background: linear-gradient(90deg, #b16cea 14.06%, #ff5e69 44.79%, #ff8a56 71.87%, #ffa84b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.title {
+  display: inline;
+  font-size: 48px;
+  font-weight: 600;
 }
 
 /* @layer components {

@@ -29,11 +29,15 @@ const skills = [
 const Skills = () => {
   return (
     <section className={`${styles.skills} skills`}>
-      <h2 className={`${styles.title} text-gradient`}>Мои навыки</h2>
-      <div className={styles.cards}>
-        {skills.map((skill) => (
-          <SkillCard key={skill.id} logo={skill.logo} text={skill.text} />
-        ))}
+      <div className="container">
+        <h2 className="title">
+          <span className="text-gradient">Мои навыки</span>&nbsp;🛠
+        </h2>
+        <div className={styles.cards}>
+          {skills.map((skill) => (
+            <SkillCard key={skill.id} logo={skill.logo} text={skill.text} />
+          ))}
+        </div>
       </div>
     </section>
   );

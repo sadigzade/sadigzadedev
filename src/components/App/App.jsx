@@ -8,6 +8,8 @@ import Footer from "../Footer/Footer";
 import About from "../About/About";
 import Skills from "../Skiils/Skills";
 import Hero from "../Hero/Hero";
+import Contacts from "../Contacts/Contacts";
+import Projects from "../Projects/Projects";
 
 const App = () => {
   return (
@@ -24,10 +26,10 @@ const App = () => {
             </div>
           </ParallaxText>
         </div>
-        <div className="container">
-          <About />
-          <Skills />
-        </div>
+        <About />
+        <Skills />
+        <Projects />
+        <Contacts />
       </main>
       <Footer />
     </div>

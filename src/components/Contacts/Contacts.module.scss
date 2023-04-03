@@ -1,0 +1,46 @@
+@import "../../assets/styles/variables";
+
+.contacts {
+  padding: 60px 0;
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    gap: 30px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 630px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: $options;
+    }
+
+    span,
+    a {
+      color: $grey;
+      transition: color 300ms ease-in-out;
+    }
+
+    a:hover {
+      color: $white;
+    }
+  }
+}

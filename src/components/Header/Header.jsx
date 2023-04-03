@@ -76,11 +76,11 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  data-goto="projects"
+                  data-goto="portfolio"
                   href="/"
                   className={styles.menu__link}
                   onClick={onMenuLinkClick}>
-                  Проекты
+                  Портфолио
                 </a>
               </li>
               <li>

@@ -1,5 +1,9 @@
 @import "../../assets/styles/variables";
 
+._lock {
+  overflow: hidden;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -7,8 +11,8 @@
   width: 100%;
   z-index: 20;
   padding: 25px 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  background-color: $main;
+  background: rgba(22, 21, 19, 0.95);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 
   &__container {
     display: flex;

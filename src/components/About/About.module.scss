@@ -1,7 +1,8 @@
 @import "../../assets/styles/variables";
 
 .about {
-  margin-top: 80px;
+  padding: 60px 0;
+  background-color: $options;
 
   .title {
     display: inline;
@@ -24,12 +25,6 @@
     }
 
     .image {
-      max-width: 500px;
-
-      @media (max-width: 1055px) {
-        max-width: 100%;
-      }
-
       img {
         border-radius: 20px;
         object-fit: cover;
@@ -38,12 +33,6 @@
     }
 
     .info {
-      max-width: 500px;
-
-      @media (max-width: 1055px) {
-        max-width: 100%;
-      }
-
       h3 {
         font-size: 32px;
         opacity: 0.8;
