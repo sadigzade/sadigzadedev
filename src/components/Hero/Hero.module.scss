@@ -67,7 +67,7 @@
 
       @media (max-width: 1055px) {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
       }
     }
 
@@ -77,6 +77,8 @@
       gap: 20px;
 
       &__icons {
+        display: flex;
+
         svg {
           height: 32px;
           width: 32px;
