@@ -1,10 +1,19 @@
-import React from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
-import ProjectPreview1 from "../../assets/images/project-preview-1.jpg";
+import ProjectCard from "./ProjectCard/ProjectCard";
+import { projectsRequestFetch } from "../../services/actions/projects";
 
 import styles from "./Projects.module.scss";
 
 const Projects = () => {
+  const dispatch = useDispatch();
+  const projects = useSelector((state) => state.projects.projects);
+
+  useEffect(() => {
+    dispatch(projectsRequestFetch());
+  }, []);
+
   return (
     <section className={`${styles.projects} portfolio`}>
       <div className="container">
@@ -13,74 +22,9 @@ const Projects = () => {
         </h2>
         <div className={styles.projects__body}>
           <div className={styles.projects__list}>
-            <div className={styles.projects__item}>
-              <img src={ProjectPreview1} alt="" />
-              <div className={styles.projects__item__info}>
-                <div className={styles.item__header}>
-                  <h3>Stellar Burgers</h3>
-                  <span>Приложения бургеров</span>
-                </div>
-                <div className={styles.links}>
-                  <a href="/" className={styles.links__item}>
-                    <span>Code</span>
-                  </a>
-                  <a href="/" className={styles.links__item}>
-                    <span>Demo</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className={styles.projects__item}>
-              <img src={ProjectPreview1} alt="" />
-              <div className={styles.projects__item__info}>
-                <div className={styles.item__header}>
-                  <h3>Stellar Burgers</h3>
-                  <span>Приложения бургеров</span>
-                </div>
-                <div className={styles.links}>
-                  <a href="/" className={styles.links__item}>
-                    <span>Code</span>
-                  </a>
-                  <a href="/" className={styles.links__item}>
-                    <span>Demo</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className={styles.projects__item}>
-              <img src={ProjectPreview1} alt="" />
-              <div className={styles.projects__item__info}>
-                <div className={styles.item__header}>
-                  <h3>Stellar Burgers</h3>
-                  <span>Приложения бургеров</span>
-                </div>
-                <div className={styles.links}>
-                  <a href="/" className={styles.links__item}>
-                    <span>Code</span>
-                  </a>
-                  <a href="/" className={styles.links__item}>
-                    <span>Demo</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className={styles.projects__item}>
-              <img src={ProjectPreview1} alt="" />
-              <div className={styles.projects__item__info}>
-                <div className={styles.item__header}>
-                  <h3>Stellar Burgers</h3>
-                  <span>Приложения бургеров</span>
-                </div>
-                <div className={styles.links}>
-                  <a href="/" className={styles.links__item}>
-                    <span>Code</span>
-                  </a>
-                  <a href="/" className={styles.links__item}>
-                    <span>Demo</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+            {projects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
           </div>
         </div>
       </div>

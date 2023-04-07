@@ -1,0 +1,80 @@
+@import "../../../assets/styles/variables";
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .item__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: $main;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 20px;
+
+    @media (max-width: 610px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 520px) {
+      flex-direction: column;
+    }
+
+    h3 {
+      line-height: 1;
+    }
+
+    span {
+      color: $grey;
+    }
+
+    .item__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      @media (max-width: 610px) {
+        align-items: start;
+      }
+
+      @media (max-width: 520px) {
+        align-items: center;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 20px;
+
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 5px 10px;
+        background-color: $options;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+
+        span {
+          color: $white;
+          transition: color 300ms ease-in-out;
+        }
+
+        &:hover span {
+          color: #ff8d3f;
+        }
+      }
+    }
+  }
+}
